@@ -4,56 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>K.Σ.</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #c7f1f6;
-            color: #333;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        .countdown {
-            font-size: 2rem;
-            background-color: #00a6ff49;
-            padding: 20px;
-            border-radius: 10px;
-            display: inline-block;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script src="ks.js"></script>
 </head>
 <body>
     <h1>K.Σ.</h1>
     <div class="countdown" id="countdown" ></div>
-
-    <script>
-        // Set the date for the countdown (year, month, day, hour, minute, second)
-        const eventDate = new Date('2025-05-20T23:59:59').getTime();
-
-        // Update the countdown every 1 second
-        const countdownFunction = setInterval(function() {
-            const now = new Date().getTime();
-            const distance = eventDate - now;
-
-            // Time calculations
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Display the result in the element with id="countdown"
-            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
-
-            // If the countdown is finished, write some text
-            if (distance < 0) {
-                clearInterval(countdownFunction);
-                document.getElementById("countdown").innerHTML = "EXPIRED";
-            }
-        }, 1000);
-    </script>
+    
+    <div class="countdown1" id="countdown1" ></div>
 </body>
 </html>
