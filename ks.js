@@ -17,7 +17,9 @@ const countdownFunction = setInterval(function() {
     document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
     + minutes + "m " + seconds + "s ";
 
-    document.getElementById("countdown1").innerHTML = ((now - startingDate) / (eventDate - startingDate))*100 + "%";
+    const persent = (((now - startingDate) / (eventDate - startingDate))*100).toFixed(6)
+    
+    document.getElementById("countdown1").innerHTML =  persent + "%";
 
     // If the countdown is finished, write some text
     if (distance < 0) {
