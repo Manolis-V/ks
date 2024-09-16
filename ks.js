@@ -11,24 +11,24 @@ const countdownFunction = setInterval(function() {
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    // const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Time calculations for days passed
     const days_passed = Math.floor(distance_passed / (1000 * 60 * 60 * 24));
     const hours_passed = Math.floor((distance_passed % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes_passed = Math.floor((distance_passed % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds_passed = Math.floor((distance_passed % (1000 * 60)) / 1000);
+    // const seconds_passed = Math.floor((distance_passed % (1000 * 60)) / 1000);
 
     // Display the result in the element with id="countdown"
     document.getElementById("days_left").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
+    + minutes + "m ";
 
     const persent = (((now - startingDate) / (eventDate - startingDate))*100).toFixed(6)
     
     document.getElementById("percentage").innerHTML =  persent + "%";
 
     document.getElementById("days_passed").innerHTML = days_passed + "d " + hours_passed + "h "
-    + minutes_passed + "m " + seconds_passed + "s ";
+    + minutes_passed + "m ";
 
     // If the countdown is finished, write some text
     if (distance < 0) {
