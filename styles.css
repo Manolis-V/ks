@@ -4,23 +4,85 @@ body {
     background-color: #c7f1f6;
     color: #333;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s, color 0.5s;
 }
+
+
+/* Default Theme (Light) */
+:root {
+    --background-color: #c7f1f6;
+    --text-color: #000000;
+    --primary-color: #00a6ff49;
+    --container-color: #00ffff49;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    --background-color: #333333;
+    --text-color: #ffffff;
+    --primary-color: #17a2b8;
+    --container-color: #00ffff49;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 30px 30px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+}
+
+button:after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    width: 20px;
+    height: 20px;
+    background-color: var(--background-color);
+    border: 3px solid var(--text-color);
+    border-radius: 50%;
+
+    background: linear-gradient(
+        90deg,
+        var(--text-color) 50%,
+        var(--background-color) 50%)
+}
+
+
+.theme-selector {
+    margin: 20px;
+}
+
 h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
-#countdown {
-    font-size: 2rem;
-    background-color: #00a6ff49;
+#container{
+    max-width: fit-content;
+    margin: 10px auto auto auto;
+    background-color: var(--container-color);
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 10px;
-    display: inline-block;
 }
-#countdown1 {
+
+#percentage, #days_passed, #days_left {
     font-size: 2rem;
-    background-color: #00a6ff49;
+    background-color: var(--primary-color);
     padding: 20px;
     border-radius: 10px;
-    display: inline-block;
+    margin-top: 10px;
 }   

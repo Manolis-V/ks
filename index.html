@@ -6,13 +6,26 @@
     <title>K.Σ.</title>
     <link rel="stylesheet" href="styles.css">
     <script src="ks.js"></script>
+    <link rel="stylesheet" href="https://fontawesome.com/icons/circle-half-stroke?f=classic&s=solid">
 </head>
 <body>
-    <h1>K.Σ.</h1>
 
-<!--     <div class = "grid-container"> -->
-        <div id="countdown" ></div>
-        <div id="countdown1" ></div>
-<!--     </div> -->
+    <div id="container">
+        <h1>K.Σ.</h1>
+        <section>
+            <h2>Days left</h2>
+            <div id="days_left" ></div>
+        </section>
+        <section>
+            <h2>Days passed</h2>
+            <div id="percentage" ></div>
+            <div id="days_passed" ></div>
+        </section>
+
+        <div class="theme-selector">
+            <button onclick="setTheme()"></button>
+        </div>
+    </div>
+
 </body>
 </html>
