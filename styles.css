@@ -1,20 +1,3 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #c7f1f6;
-    color: #333;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-
-
-    background-color: var(--background-color);
-    color: var(--text-color);
-    font-family: Arial, sans-serif;
-    transition: background-color 0.5s, color 0.5s;
-}
-
-
 /* Default Theme (Light) */
 :root {
     --background-color: #c7f1f6;
@@ -29,6 +12,21 @@ body.dark-theme {
     --text-color: #ffffff;
     --primary-color: #17a2b8;
     --container-color: #00ffff49;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #c7f1f6;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 button {
@@ -61,7 +59,6 @@ button:after {
         var(--background-color) 50%)
 }
 
-
 .theme-selector {
     margin: 20px;
 }
@@ -70,6 +67,7 @@ h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
+
 #container{
     max-width: 320px;
     margin: 10px auto auto auto;
