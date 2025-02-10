@@ -5,7 +5,7 @@ A simple yet dynamic **countdown website** that continuously updates in real-tim
 ✅ **Days Left**  
 ✅ **Percentage Progress** (with high precision, changing every second)  
 
-🚀 Live Demo: [Your Website Link](https://yourusername.github.io/countdown)  
+🚀 Live Demo: [KS](https://manolis-v.github.io/ks)
 
 ---
 
