@@ -30,8 +30,8 @@ A simple yet dynamic **countdown website** that continuously updates in real-tim
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/countdown.git
-   cd countdown
+   git clone https://github.com/yourusername/ks.git
+   cd ks
    ```
 2. Open ```index.html``` in a browser.
 3. Enjoy the real-time countdown! 🎉
